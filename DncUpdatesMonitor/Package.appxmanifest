@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="aba45291-ef42-4f52-ad85-5e1404875c00"
-    Publisher="CN=hez20"
+    Name="8436hez2010..NETCoreUpdatesMonitor"
+    Publisher="CN=E6A45EF7-9CCA-47FC-94F6-10B7B6A7946A"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="aba45291-ef42-4f52-ad85-5e1404875c00" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="162e8d99-d440-43ec-afbd-542e8c44d5d0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>.NET Core Updates Monitor</DisplayName>
