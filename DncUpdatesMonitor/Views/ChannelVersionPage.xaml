@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="DncUpdatesMonitor.Views.ChannelVersionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DncUpdatesMonitor.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlChromeHighAcrylicWindowMediumBrush}">
+
+    <Grid Margin="16,0,16,0">
+        <StackPanel>
+            <RelativePanel>
+                <TextBlock x:Name="ChannelVersionTitle" FontSize="16" Text="Channel version: "></TextBlock>
+                <TextBlock Margin="8,0,0,0" RelativePanel.RightOf="ChannelVersionTitle" FontSize="16" Text="{x:Bind viewModel.ReleaseIndex.ChannelVersion}"></TextBlock>
+            </RelativePanel>
+            <RelativePanel Visibility="{x:Bind viewModel.ReleaseIndex.EolDate.HasValue}">
+                <TextBlock x:Name="EolDateTitle" FontSize="16" Text="End of lidecycle: "></TextBlock>
+                <TextBlock x:Name="EolDate" Margin="8,0,0,0" RelativePanel.RightOf="EolDateTitle" Text="{x:Bind viewModel.ReleaseIndex.EolDate}"></TextBlock>
+            </RelativePanel>
+        </StackPanel>
+    </Grid>
+</Page>
